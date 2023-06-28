@@ -7,7 +7,7 @@
             Console.WriteLine("Hello, World!");
             Console.WriteLine("Welcome Class & Objects examples");
             Console.WriteLine("Choose options in below programs:");
-            Console.WriteLine("\n1.AdditionFirst50Num\n2.EvenNumbers\n3.ConcatenateStrings\n4.Variables");
+            Console.WriteLine("\n1.AdditionFirst50Num\n2.EvenNumbers\n3.ConcatenateStrings\n4.Variables\n5.TypesofMethods");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -26,6 +26,14 @@
                 case 4:
                     variables variables = new variables();
                     variables.var();
+
+                    break;
+                case 5:
+                    Methods methods = new Methods();
+                    methods.InstanceMethod();
+                    
+                    int result = methods.MethodWithReturnValue(10, 20);
+                    Console.WriteLine("Sum: " + result);
 
                     break;
             }
