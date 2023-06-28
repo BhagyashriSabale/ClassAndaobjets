@@ -7,7 +7,7 @@
             Console.WriteLine("Hello, World!");
             Console.WriteLine("Welcome Class & Objects examples");
             Console.WriteLine("Choose options in below programs:");
-            Console.WriteLine("\n1.AdditionFirst50Num\n2.EvenNumbers\n3.ConcatenateStrings");
+            Console.WriteLine("\n1.AdditionFirst50Num\n2.EvenNumbers\n3.ConcatenateStrings\n4.Variables");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -22,6 +22,11 @@
                 case 3:
                     ConcatenateStrings3 concatenate = new ConcatenateStrings3();
                     concatenate.Concatenate();
+                    break;
+                case 4:
+                    variables variables = new variables();
+                    variables.var();
+
                     break;
             }
         }
